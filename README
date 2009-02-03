@@ -1,0 +1,15 @@
+###  Installation
+    # Place files here.  Create the directory if it doesn't exist.
+    ~/Library/Application Support/Developer/Shared/Xcode/Project Templates/
+    
+    # The second to last path component is the name of a group that shows up in the XCode new project 
+    # sidebar.  The last path component is the name of the project.
+    ~/Library/Application Support/Developer/Shared/Xcode/Project Templates/Justins Templates/Cocos2d Game
+    
+### Usage
+After you've installed it create a new project using your project template in Xcode's new project 
+chooser.  All frameworks have been included that are needed.
+
+### Note
+This project template contains a distribution build target, but it's just for convenience.  You'll need 
+to change these settings and select your own provisioning profile if you plan on distributing your app.
