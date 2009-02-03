@@ -1,0 +1,24 @@
+cocos2d for iPhone authors
+--------------------------
+
+Maintainer / main developer: Ricardo Quesada
+
+Special thanks to: Lucio Torre, Alejandro Cura, Daniel Moisset & Rayentray Tappa.
+
+Contributors (alphabetically ordered):
+    * Alejandro Cura: author of AccelViewPortDemo
+    * Brian Hammond: patches for Demos
+    * Codemattic: patches for CocosNode, MenuItemFont
+    * effervens: patches for Director
+	* Ernesto Corvi: added TGA RLE support, patches for TextureMgr, Sprite
+	* Fradj Johann: patches for CocosNode, Layer, MultiplexLayer
+    * Ishaq Malik: patches for CocosNode
+    * lukeman: patches for MenuItem
+	* Mitch: patches for Menu
+    * Serge Kolgan: patches for CocosNode
+    * Steve Israelson: patches for Scheduler, Actions, Transitions
+	* Steve Oldmeadow: patches for Texture2D
+    * yarrington: patches for Director
+
+
+Am I missing someone ? Oops, sorry. Send me an email.

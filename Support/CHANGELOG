@@ -1,0 +1,208 @@
+version 0.5.3 - dd-mmm-yyyy
+ . Actions: Repeat fixes (issue #81)
+ . CocosNode: added numberOfRunningActions (issue #72)
+ . CocosNode: removeAll fixes (issue #74)
+ . CocosNode: stopAction fix (issue #82)
+ . CocosNode: supports flipX and flipY (issue #53)
+ . CocosNode: supports scaleX and scaleY (issue #54) 
+ . Layer: isTouchEnabled, isAccelerometerEnabled are properties (issue #70)
+ . Menu: supports CocosNodeOpacity protocol (issue #76)
+ . MultiplexLayer: added switchToAndReleaseMe (issue #71)
+ . OpenGLSupport: performance improvements (issue #84)
+ . Particles: ParticleCount is a property (issue #68)
+ . Texture2D: images & RGBA8 fixes (issue #86)
+ . TextureMgr: Simulator supports PVRTC images (issue #75)
+ . TextureMgr: removeTexture fixed (issue #85)
+ . TextureMgr: supports CGImageRef (issue #87)
+ . TileMapAtlas: supports TGA RLE format (issue #38)
+
+version 0.5.2 - 04-Nov-2008
+ . All: assign [super init] to self (issue #61)
+ . Documentation: Add AUTHORS file with the cocos2d's contributors (issue #62)
+ . CocosNode: added tags (getByTag, removeByTag)  (issue #52)
+ . CocosNode: fixed big memory leak (issue #67)
+ . Director: able to remove event enabled nodes (issue #56)
+ . Director: can be hidden / unhidden (issue #55)
+ . License: Explicit paragraphs that allows cocos2d + closed source projects (issue #57)
+ . MenuItemImage: able to modify inner sprites (issue #58)
+ . OpenGLSupport: added PowerVR Texture Compression (PVRTC) format support (issue #66)
+ . Transitions: don't flicker (issue #60)
+
+version 0.5.1 - 20-Oct-2008
+ . Actions: Animation has restoreOriginalFrame argument (issue #46)
+ . Actions: CallFunc retains target (issue #42)
+ . AtlasNode: renders some artifacts (partially fixed issue #47)
+ . Demos: Updated Chipmunks demos (issue #43)
+ . Demos: Elasticity fixed in Chipmunk_Accel (issue #45)
+ . Director: fps_images.png consumes much less texture memory (issue #49)
+ . Documentation: included LICENSE.artwork (issue #51)
+ . LabelAtlas: works with NxM size images (issue #50)
+ . MenuItem: supports enable/disable (issue #22)
+ . Particle system: exports more variables (issue #48)
+ 
+version 0.5.0 - 05-Oct-2008
+ . Actions: copy protocol fixed on some actions (issue #27)
+ . Chipmunk: using newest version from svn (issue #34)
+ . CocosNode: Nodes not being dealloced with active actions (issue #25)
+ . CocosNode: Doxygen API reference fixed (issue #29)
+ . Demo: added test/example of the new Atlas feature (issue #40)
+ . Director: Doxygen API reference fixed (issue #29)
+ . Director: Display FPS are rendered 10 times per second (issue #37)
+ . LabelAtlas: Fast render update Label (issue #36) (*NEW_FEATURE*)
+ . MenuItem: sending correct 'self' as argument (issue #19)
+ . Misc: improved cocos2d icon and default image (issue #33)
+ . TextureAtlas: Object to render indexed vertex arrays from 1 texture (issue #32) (*NEW_FEATURE*)
+ . TileMapAtlas: Tile Map renderer (issue #35) (*NEW_FEATURE*)
+ . TextureMgr: added removeAllTextures (issue #31)
+ . Scheduler: retain arguments (issue #28)
+ . Scheduler: passes correct delta time (issue #26)
+ . Sprite: replaced xxxFromFile with xxxWithFile (issue #39) (*API_CHANGED*)
+
+version 0.4.3 - 19-Sept-2008
+ . Demo: AccelViewPort using code without the VirtualAccelerometer
+ . Demo: TransitionDemo shows the 6 new transitions
+ . Demo: Updated Icon.png & Default.png files
+ . MenuItem: MenuItemFont are 3 pixels heigher.
+ . Transitions: all Flip transitions have orientation: Left<->Right, Up<-->Down (6 new transitions)
+
+version 0.4.2 - 10-Sept-2008
+ . Action: FadeOut reverse fixed
+ . Demo: AnchorDemo using back, restart, forward arrows
+ . MenuItem: callback receives the sender as its argument (issue 14)
+ . Particles: added initWithTotalParticles method.
+ . Transitions: Fixed HUGE memory leak
+ . Transitions: Timing fix. Slide transitions don't show "black" space
+
+version 0.4.1 - 08-Sept-2008
+ . Actions: commented an NSLog()
+ . CocosNode: added removeAll (by Codemattic)
+ . CocosNode: implementation file reorganized
+ . CocosNode: added stopAction method (to remove just 1 one action)
+ . CocosNode: sanity check when removing actions
+ . Demo: ClickAndMove demo working again (issue 12)
+ . Demo: SpritesDemo using back, restart & forward arrows
+ . Demo: TransitionsDemo using back, restart & forward arrows
+ . Demo: ParticleDemo using back, restart & forward arrows
+ . Director: added eventsEnabled. You can enable/disabled touch events globally (eg: Transitions want this feature)
+ . Director: implementation file reorganized
+ . Director: drawScene renamed to mainLoop
+ . Director: FPS are shown in the very bottom-left corner
+ . Transitions: Added new ZoomFlipXTransition transition.
+ . Transitions: Added new ZoomFlipYTransition transition.
+ . Transitions: Added new ZoomFlipAngularTransition transition.
+ 
+version 0.4.0 - 30-Ago-2008
+ . CocosNode: private methods are private
+ . CocosNode: stop renamed to stopAllActions
+ . CocosNode: children does not use a auxiliar array (by Codemattic)
+ . Director: private methods are private
+ . Menu: removed setOffsetY
+ . Menu: can be positioned like any other CocosNode using the position property
+ . MenuItem: renamed to MenuItemFont
+ . MenuItem: added MenuItemImage
+ . MenuItem: uses target/selector, not receiver/selector
+ . MenuItem: MenuItemFont restore scale to 1.0 after being invoked (by Codemattic)
+ . MenuItem: can be positioned on runtime. 
+ . TextureNode: renamed setR:g:b: to setRGB:::
+
+version 0.3.3 - 23-Ago-2008
+ . Action: Added CallFuncND. Like CallFuncN but accepts data
+ . CocosNode: actions can schedule actions [FIXED CRASH]
+ . CocosNode: added default capacity to actions, children, & schedulers
+ . CocosNode: relativeTrasnformAnchor is property
+ . CocosNode: childrenAnchor removed (It wasn't working and it wasn't very useful)
+ . CocosNode: negative z-order working
+ . Demos: removed playgroud
+ . Demos: added AnchorDemo
+ . Demos: removed unused code from MenuTest
+ . Demos: removed TcpAccelClient (deprecated)
+ . Demos: AccelViewPort using VirtualAccelerometer
+ . Director: fixed memory leak. First scene wasn't released
+ . Director: fixed issue #6. Delta Time is never negative, and if a "Significant Time Change" is present, then DeltaTime will be 0.
+
+version 0.3.2 - 14-Ago-2008
+ . Action: Animate was using the wrong index. Possible crash fixed
+ . ColorLayer: added support to change width & height at runtime
+ . Demos: IntervalDemo using relative path for plist.info file
+ . Demos: added filter to TcpAccelClient & Chipmunk_Accel demos (by Brian Hammond)
+ . Director: propagates TouchEvents to all registered layers
+ . Misc: Removed sound support. Not part of cocos2d
+ . Misc: Moved OpenGLSupport inside the cocos2d directory. cocos2d.h includes OpenGLSupport headers
+ . Misc: added getCocos2dVersion() function
+ . Particles: It was (mistakenly) using Z coordinate
+ . Sprite: added setDisplayFrame selector
+
+
+version 0.3.1 - 30-Jul-2008
+ . All: methods that receives target/selector, are named:Target selector (unified API)
+ . All: added "cocos2d.h". applications should only import this file.
+ . Demos: added resume/pause to application
+ . Demos: chipmunk_accel is frame independent
+ . Demos: added IntervalDemo demo. Shows how to uses interval timers, and how pause/resume works
+ . Demos: removed JumpingSisters demo
+ . Demos: new Default.png
+ . Director: when paused don't consume CPU. Only renders the screen at 4 FPS.
+ . Particles: don't uses draw to update, uses scheduled step. (pause/resume works)
+ . Scheduler: added interval timers
+ . Transitions: they don't flickr (bug introduced in v0.3.0)
+ . Types: created ccTime type (float or double) used to calculate delta time
+ . Types: older types have the prefix "cc" (cocos)
+
+ 
+version 0.3.0 - 27-Jul-2008
+ . Actions: they are not cloned. If you want to reuse them, clone them manually using the method 'copy'
+ . Actions: CallFunc, CallFuncN using performSelector instead of NSInvocator
+ . Actions: added CallFuncN action. First argument is the target node
+ . Core: Using own scheduler to schedule timers/etc.
+ . Demos: Added OrbitCamera demo in SpritesDemo project
+ . Director: can initialize the view with pixel format RGBA8 or RGB565 (default)
+ . Director: if in landscape mode, tells the application to be in landscape mode too
+ . Director: landscape mode is LEFT again, since "Touch fighter" (apple game) uses left landscape
+ . Director: setFPS, FPS renamed to setDisplayFPS, displayFPS
+ . Director: added pause/resume support
+ . Label: supports changing it's string
+ . Menu: added support for y-offset
+ . MenuItem: font size and font name are customizables
+ . MenuItems: doesn't have "artifacts"
+ . Texture Node: Added FadeIn/FadeOut support
+ . Texture Node: Added transform anchor support
+ . Texture Node: Added color suppport
+ . Texture Node: Added new cocos2d node. Base class of Sprite and Label
+ 
+
+version 0.2.1 - 21-Jul-2008
+ . Director: landscape can be RIGHT or LEFT (at compile time)
+ . Director: proxies touchesCancelled
+ . Particle System: added smoke particle.
+ . Particle System: fire example improved.
+ . Particle System: supports for additive and blend colors
+ . Particle System: splited in 2 files: particle.[hm] and ParticleSystems.[hm]
+ . Particle System: doesn't iterate over dead particles
+ . Particle System: fire.png uses white color, so "blend" mode works ok. fire.png is smaller (less resources)
+
+
+version 0.2 - 5-Jul-2008
+ . Replaced CGPoint with chipmunk's vector (cpVect) in CocosNode
+ . Added particle system.
+    . uses VBO + POINT_SPRITES
+    . Built-in systems: Fire, Fireworks, Sun, Galaxy, Flower, Meteor, Spiral, Explosion
+	. supports: system duration, paticle duration, gravity, radial, tangential, color, size, texture, direction, spread (all of them with its variation)
+ . added support to display FPS
+
+
+version 0.1 - 25-jun-2008:
+
+25-jun-2008:
+ . renamed MoveBy:actionWithDuration:delta to MoveBy:actionWithDuration:position
+ . added Animation, Animate classes to animates sprites
+ . removed box2d and related stuff to box2d
+ . added and ported Chipmunk Demo
+ . added primitives like drawCircle(), drawPoly(), drawLine(), drawPoint()
+
+24-jun-2008:
+ . moved all main.c and other tests files to tests/
+ . moved plists, sounds and images to Resources/
+ . removed unused images
+ . Using only one plist file in Resources
+ . cocos2d-port renamed to trunk
+ . Imported code from Assembla
